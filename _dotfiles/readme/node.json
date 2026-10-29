@@ -5,6 +5,7 @@
   "label": "cloud-me-pub-profiles-leaf.y",
   "code": "1.2.1.1.2",
   "kind": "repo",
+  "variant": "repo",
   "description": "Leaf.y — company site",
   "visibility": "public",
   "url": "https://github.com/diegonmarcos/cloud-me-pub-profiles-leaf.y",
