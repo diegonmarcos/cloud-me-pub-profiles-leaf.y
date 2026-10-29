@@ -1,0 +1,42 @@
+{
+  "title": "🌿 Leaf Studios",
+  "intro": "**Where Edge Technologies Meets Design**\n\nA modern, high-performance portfolio website featuring WebGL shaders, smooth animations, and responsive design.",
+  "sections": [
+    {
+      "title": "📁 Project Structure",
+      "body": "```\nleafy/\n├── 0.spec/              # Original specification (leafy.html)\n├── 1.ops/               # Operations & build scripts\n│   └── build.sh        # Main build script\n├── src/                 # Source files\n│   ├── index.html      # HTML template\n│   ├── styles/         # SCSS stylesheets\n│   │   ├── main.scss\n│   │   ├── _variables.scss\n│   │   ├── _base.scss\n│   │   ├── _responsive.scss\n│   │   ├── components/\n│   │   │   ├── _navigation.scss\n│   │   │   ├── _hero.scss\n│   │   │   ├── _cards.scss\n│   │   │   ├── _loader.scss\n│   │   │   └── _cursor.scss\n│   │   └── animations/\n│   │       └── _keyframes.scss\n│   └── scripts/        # TypeScript source\n│       ├── main.ts\n│       ├── shaders/\n│       │   ├── ShaderManager.ts\n│       │   ├── vertexShader.ts\n│       │   ├── heroShader.ts\n│       │   └── calmShader.ts\n│       ├── animations/\n│       │   ├── cursor.ts\n│       │   ├── cardEffects.ts\n│       │   ├── scrollEffects.ts\n│       │   └── textScramble.ts\n│       └── utils/\n│           ├── intersectionObserver.ts\n│           ├── loader.ts\n│           └── shadertoyGallery.ts\n├── dist/               # Built output (generated)\n│   ├── index.html\n│   ├── styles/\n│   │   └── main.css\n│   └── scripts/\n│       └── *.js\n├── package.json\n└── tsconfig.json\n```"
+    },
+    {
+      "title": "🚀 Quick Start",
+      "body": "### Install Dependencies\n\n```bash\nnpm install\n```\n\n### Build Project\n\n```bash\n./1.ops/build.sh\n# or\nnpm run build\n```\n\n### Development Server\n\n```bash\nnpm run dev\n# Opens http://localhost:8080\n```\n\n### Clean Build\n\n```bash\nnpm run clean\n```"
+    },
+    {
+      "title": "🛠️ Technologies",
+      "body": "- **TypeScript** - Type-safe JavaScript\n- **SCSS** - Modular CSS with variables and nesting\n- **WebGL** - Hardware-accelerated graphics\n- **GLSL Shaders** - Custom fragment shaders for visual effects"
+    },
+    {
+      "title": "📦 Build Output",
+      "body": "The build process:\n1. Cleans `dist/` directory\n2. Copies HTML template\n3. Compiles SCSS to minified CSS\n4. Compiles TypeScript to ES2020 modules\n5. Generates optimized static site\n\n**Typical output sizes:**\n- HTML: ~10KB\n- CSS: ~12KB (minified)\n- JS: ~4-8KB per module"
+    },
+    {
+      "title": "✨ Features",
+      "body": "- 🎨 **WebGL Shaders** - Custom GLSL shaders for hero and background effects\n- 🖱️ **Custom Cursor** - Smooth, magnetic cursor with hover effects\n- 📜 **Smooth Scrolling** - Snap sections with parallax effects\n- 🎭 **Text Scramble** - Animated text reveals\n- 🃏 **3D Card Tilt** - Interactive card hover effects\n- 📱 **Responsive Design** - Mobile-first approach\n- ⚡ **GPU Accelerated** - Optimized transforms and animations\n- 🎬 **Shadertoy Gallery** - Embedded shader demonstrations"
+    },
+    {
+      "title": "🎨 Customization",
+      "body": "### Colors\n\nEdit `src/styles/_variables.scss`:\n\n```scss\n:root {\n    --gold: #c9a227;\n    --wood-darkest: #0d0a08;\n    // ...\n}\n```\n\n### Shaders\n\nEach shader has its own file in `src/scripts/shaders/`:\n- `heroShader.ts` - Intense animated shader for hero section\n- `calmShader.ts` - Subtle shader for info sections\n\n### Content\n\nModify `src/index.html` to update:\n- Services cards\n- About section\n- Contact information\n- Logo SVG"
+    },
+    {
+      "title": "🐛 Troubleshooting",
+      "body": "### Build Errors\n\nIf you get compiler errors:\n\n```bash\n# Reinstall dependencies\nrm -rf node_modules package-lock.json\nnpm install\n\n# Clean build\nnpm run clean\nnpm run build\n```\n\n### Module Not Found\n\nMake sure you're in the project root:\n\n```bash\ncd ~/Git/front-Github_io/b_Work_Profiles/leafy\n```"
+    },
+    {
+      "title": "📝 License",
+      "body": "© 2026 Leaf Studios. All rights reserved."
+    },
+    {
+      "title": "Repository",
+      "body": "Member of the [DuckPeng](https://github.com/diegonmarcos/DuckPeng) hub. This repo is the single source of the project; it was moved out of `front-endeavours` (`a_Companies/leafy`) in ticket #1224 and `front-endeavours/a_Companies/leafy` is now a symlink to this checkout.\n\n- Published at https://diegonmarcos.github.io/leafy/ (URL unchanged).\n- Layout follows the deployer conventions: project at the repo root, `build.json`, `build.sh` and `ship.yml` symlinks into `1_cicd` / `.github`, which in turn point into the `0_deployer` submodule (diegonmarcos.github.io, shallow, `ignore = all`).\n- The deployer (diegonmarcos.github.io, Pages workflow) clones THIS repo and overlays it at `a_Companies/leafy`; it never builds through the front-endeavours symlink."
+    }
+  ]
+}
